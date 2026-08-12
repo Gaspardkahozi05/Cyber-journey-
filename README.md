@@ -1,6 +1,6 @@
 # Cyber-journey
 
-This is my portfolio for the Kyberturvallisuus 15 ECVET course at [your institution].
+This is my portfolio for the Kyberturvallisuus 15 ECVET course at [vantaanammattiopisto varia].
 
 ## Contents
 
