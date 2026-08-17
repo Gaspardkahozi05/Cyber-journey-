@@ -77,8 +77,14 @@ My machine is exposing more network-facing services than I expected, with 11 por
 
 ## Reflection (150–200 words)
 - What surprised you about your own network?
-What suprised me about my network was that I have alot of ports open that I didnt know about. I didnt really know what ports was before this task.
+
+  What suprised me about my network was that I have alot of ports open that I didnt know about. I didnt really know what ports was before this task. 
+
 - Which open port (if any) would you want to investigate or close?
+
 The port I would investigate is port 139 because it is used for Windows file sharing. I would check what is using it before trying to close it.
+
+
 - Which command do you think you'll use most often, and why?
+
   The command I would use most is ipconfig /all because it shows my IP adress, gateway, DNS and other network information in one place. It would be useful if I have network problems.
