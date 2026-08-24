@@ -67,3 +67,7 @@
 
 ## References
 we just had two wireshark files provided by the teacher
+<img width="731" height="600" alt="image" src="https://github.com/user-attachments/assets/304d0d7d-4804-43b9-8a4a-d6332f6b53f7" />
+<img width="723" height="601" alt="image" src="https://github.com/user-attachments/assets/5af8f836-81a8-4ffb-b232-750f7d3f8f03" />
+
+
