@@ -69,5 +69,23 @@
   ---
   - Q11: Show the command (or commands) you used.
 
-    A: mkdir -p ~/cyber-course/unit1 ~/cyber-course/unit2 ~/cyber-course/unit3/osint ~/cyber-course/unit3/recon ~/cyber-course/unit3/crypto ~/cyber-course/scratch
+1.Create a directory structure:
+ A: mkdir -p ~/cyber-course/unit1 ~/cyber-course/unit2 ~/cyber-course/unit3/osint ~/cyber-course/unit3/recon ~/cyber-course/unit3/crypto ~/cyber-course/scratch
+     
+  2.Inside ~/cyber-course/scratch/, create three empty files: a.txt, b.txt, c.txt. Verify with ls.
+  - touch ~/cyber-course/scratch/a.txt ~/cyber-course/scratch/b.txt ~/cyber-course/scratch/c.txt
+ls -l ~/cyber-course/scratch/
+
+3. Copy a.txt to ~/cyber-course/unit1/ with the new name intro.txt. Verify it exists in the new location.
+   
+ - cp ~/cyber-course/scratch/a.txt ~/cyber-course/unit1/intro.txt
+ls -l ~/cyber-course/unit1/
+
+4. Move b.txt to ~/cyber-course/unit2/.
+- mv ~/cyber-course/scratch/b.txt ~/cyber-course/unit2/
+  
+5. Rename c.txt to notes.txt (still in scratch/).
+  - mv ~/cyber-course/scratch/c.txt ~/cyber-course/scratch/notes.txt
   ---
+  Q12
+  
