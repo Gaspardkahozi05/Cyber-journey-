@@ -87,5 +87,131 @@ ls -l ~/cyber-course/unit1/
 5. Rename c.txt to notes.txt (still in scratch/).
   - mv ~/cyber-course/scratch/c.txt ~/cyber-course/scratch/notes.txt
   ---
-  Q12
-  
+ - Q12  What key combination did you use to save? What key combination did you use to exit?
+
+
+   I used Ctrl+O to save the file, then pressed Enter to confirm the filename. I used Ctrl+X to exit nano.
+   
+
+ 7.  Run cat ~/cyber-course/unit1/intro.txt to confirm the contents.
+
+ 8. Try to delete ~/cyber-course/scratch/ with rmdir. What happens?
+    
+ --- 
+ 
+  - Q13 Why did rmdir fail (or succeed)?
+    
+    rmdir failed because the scratch/ directory was not empty. The rmdir command only removes empty directories.
+
+## Part 4 Viewing Files
+
+### Q14: Which Debian version do you have?
+
+**Answer:**  
+I have Debian [PRETTY NAME="Debian GNU/Linux 13 (trixie)"].
+
+### Q15: What kind of messages do you see? Are they recent?
+
+**Answer:**  
+The messages are mainly system and service activity, such as processes starting or stopping, system events, and other system-related information. Yes, the messages are recent because `/var/log/syslog` contains recent system activity.
+
+## Part 5 Searching
+
+### Q16: How many lines were returned?
+
+**Answer:**  
+I used:
+
+grep "ssh" /etc/services | wc -l
+
+The number of lines returned was: 1 line 
+
+### Q17: How would you modify the command to show only `.conf` files modified in the last 7 days?
+
+**Answer:**  
+I would use:
+
+find /etc -name "*.conf" -mtime -7
+
+### Q18: Where are these commands actually located on the filesystem?
+
+**Answer:**  
+I used:
+
+which ls
+which nano
+
+The commands are usually located at:
+
+ls: /usr/bin/ls
+nano: /usr/bin/nano
+
+## Part 6 History, redirection, and pipes
+
+### Q19: What does the `|` symbol do here?
+
+**Answer:**  
+I used:
+
+history | tail -n 20
+
+The `|` sends the output from `history` to `tail`. It shows the last 20 commands.
+
+## Part 7 Archives
+
+### Q22: Confirm with `ls -la` that the extraction worked. What did you find inside?
+
+**Answer:**  
+I used:
+
+ls -la
+
+I found the `unit1` folder inside the `test-extract` directory. The extraction worked.
+
+### Q23: What do the flags `c`, `z`, `v`, and `f` each mean?
+
+**Answer:**  
+- `c` = create a new archive
+- `z` = use gzip compression
+- `v` = show the files being processed
+- `f` = use the filename given
+
+### Q20: What is the difference between `>` and `>>`?
+
+**Answer:**  
+`>` replaces the old content in the file.
+
+`>>` adds new content to the end of the file.
+
+### Q21: What was the output, and why?
+
+**Answer:**  
+I got:
+
+hello cyber world
+
+It showed this because the word `cyber` was found in the sentence.
+
+### Question: What is the difference between `clear` and `Ctrl+L`?
+
+**Answer:**  
+Both clear the terminal screen. `clear` is a command, while `Ctrl+L` is a keyboard shortcut. 
+
+## Part 7 Archives
+
+### Q22: Confirm with `ls -la` that the extraction worked. What did you find inside?
+
+**Answer:**  
+I used:
+
+ls -la
+
+I found the `unit1` folder inside the `test-extract` directory. The extraction worked.
+
+### Q23: What do the flags `c`, `z`, `v`, and `f` each mean?
+
+**Answer:**  
+- `c` = create a new archive
+- `z` = use gzip compression
+- `v` = show the files being processed
+- `f` = use the filename given
