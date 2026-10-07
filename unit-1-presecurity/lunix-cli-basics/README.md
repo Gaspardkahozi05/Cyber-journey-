@@ -215,3 +215,97 @@ I found the `unit1` folder inside the `test-extract` directory. The extraction w
 - `z` = use gzip compression
 - `v` = show the files being processed
 - `f` = use the filename given
+---
+## Part 8 Permissions
+
+### Q24: Paste the permission string. Can the owner execute the file?
+-rw-rw-r --
+
+### Q25: What happened, and why?
+- permission was denied because i didn't have the x permission
+
+### Q26: What does the new permission string look like? Did the script run this time?
+- -rwxrw-r--
+  
+### Q27: What does 700 mean in plain language?
+- 700 means the owner has read, write, and execute permissions, while the group and everyone else have no permissions.
+---
+## Part 9 Processes and system info
+
+### Q28: What does the `USER` column show?
+
+**Answer:**  
+The `USER` column shows the username of the user who owns or started each process.
+
+### Q29: How much disk space is your `cyber-course` directory using?
+
+**Answer:**
+44k
+
+### Q30: How much RAM does your VM have, and how much is currently used?
+
+
+**Answer:**  
+Total RAM: [1.9 Gb]
+Used RAM: [1.1 Gb]
+---
+## Part 10 Networking and downloads
+
+### Q31: What is your VM's IP address on the primary interface?
+
+**Answer:**  
+IP [127.0.0.1]
+
+### Q32: Did both succeed? If one failed, what is the most likely reason?
+ping -c 4 1.1.1.1 said operation not permitted
+ping -c example.com succeeded 
+
+### Q33: Are the two files identical? (Hint: diff debian.html debian2.html.)
+
+**Answer:**  
+- no the two were not identical one was longer and with a lot  of data the other was short with less data
+
+  ---
+  ## Part 11 Package management and sudo
+
+### Q34: Did `sudo` ask for a password? Whose password?
+
+**Answer:**  
+- yes sudo asked for my vm's  password
+
+### Q35: Were any packages upgraded? Roughly how many?
+
+**Answer:**  
+- no package because everything was upgradaded already
+
+### Q36: What's one thing htop shows you that top did not?
+
+**Answer:**  
+- htop shows is a more interactive and colorful process display, including CPU and memory usage bars.
+
+### Q37: What is nmap, according to the description?
+
+**Answer:** '
+- nmap is a network exploration tool and port scanner. It can be used to discover hosts and services on a network.
+---
+
+## Part 12 Putting it together
+
+### Q38: Paste the commands you used.
+
+**Answer:**  
+
+mkdir ~/report
+
+- hostname > ~/report/system-info.txt
+- whoami >> ~/report/system-info.txt
+- uname -a >> ~/report/system-info.txt
+- df -h >> ~/report/system-info.txt
+- date >> ~/report/system-info.txt
+
+- zip -r ~/report.zip ~/report
+
+- unzip -l ~/report.zip
+---
+
+
